@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/ktslogo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styl.css" />
+    <title>Ketanech | Electrical Electronics & Construction</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <h1 class="nav__logo"> KETANECH <span class="tech">Technology Services </span></h1>
+       <!--- <img
+          src="img/origlogo.png"
+          alt="Bankist logo"
+          class="nav__logo"
+          id="logo"
+          designer="odun"
+          data-version-number="3.0"
+        />-->
+
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Training</a>
+          </li>
+          <div>
+            <ul class="nav__links">
+              <li class="nav__item">
+              <a class="nav__link" href="#section">Our Services <span class="fas fa-caret-down" onclick="dropdown()"></span> </a>
+              <div  class="dropdown-content">
+                <ul>
+                  <li>
+                    <a href="#home" id="comingdown"
+                      >Electrical Engineering</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#home" id="comingdown"
+                      >Electronics Engineering<i class="fas fa-caret-right"></i>
+                    </a>
+                    <div class="dropdown-content-1">
+                      <ul>
+                        <li><a href="#home"> Automatic Gate</a>
+                          </li>
+                          <li><a href="#home">Weldering Works</a></li>
+                          <li><a href="#home">Weld Works</a></li>
+                        </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#home" id="comingdown">Computer Engineering</a>
+                  </li>
+
+                  <li>
+                    <a href="#home" id="comingdown"
+                      >Mechatronics Engineering</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#home" id="comingdown"
+                      >Mechanical Engineering</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </div>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--4">Shop</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          Ketanech
+          <!-- Green highlight effect -->
+          <span class="highlight">Electrical</span>
+          and<br />
+          <span class="highlight">electronics</span>
+        </h1>
+        <h4>Offers a training Services for various levels of Student.</h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img
+          src="img/light3.jpg"
+          class="header__img"
+          alt="Ketanech components"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Offices</h2>
+        <h3 class="section__header">
+          Everything you need in electronics and more.
+        </h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="img/ofice.jpg"
+          data-src="img/ofice.jpg"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/comp4.jpg"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">100% Automation</h5>
+          <p>
+            Continually innovating solutions in a new digital world to suit our
+            Client requirements.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">
+            Gain more Knowledge on full automation & electronics
+          </h5>
+          <p>
+            We Upgrade products and machines from old to new technologies to
+            extend machine life and improve efficiencies. We stay up to date
+            with the latest technologies and are continually innovating to make
+            solutions to meet our customers requirements.
+          </p>
+        </div>
+        <img
+          src="img/comp2.jpg"
+          data-src="img/comp4.jpg"
+          alt="Plant"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/equi1.jpg"
+          data-src="img/miccro.png"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">
+            You can also have access to different machines
+          </h5>
+          <p>
+            Our Company design and implement solutions so we have practical
+            experience with the use and performance of our products. We are
+            always innovating and trying to find better ways of doing things to
+            suite our African requirements
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Training</h2>
+        <h3 class="section__header">
+          Everything as simple as possible, but no simpler.
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="
+              btn
+              operations__tab operations__tab--1 operations__tab--active
+            "
+            data-tab="1"
+          >
+            <span>01</span>Electronics Kits
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Micro-Controller
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Projects
+          </button>
+        </div>
+        <div
+          class="
+            operations__content
+            operations__content--1
+            operations__content--active
+          "
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">Ketanech Kits</h5>
+          <p>
+            <img src="img/equi2.jpg" />
+            Our Company design and implement solutions so we have practical
+            experience with the use and performance of our products. We are
+            always innovating and trying to find better ways of doing things to
+            suite our African requirements
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            <img src="img/mat5.jpg" />
+            A Micro-Controller contains one or more CPUs(processor cores) along
+            with memory card and programmable input/output peripherals
+          </h5>
+          <p>
+            We Upgrade products and machines from old to new technologies to
+            extend machine life and improve efficiencies. We stay up to date
+            with the latest technologies and are continually innovating to make
+            solutions to meet our customers requirements.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            
+          </h5>
+          <p>
+            Our Company design and implement solutions so we have practical
+            experience with the use and performance of our products. We are
+            always innovating and trying to find better ways of doing things to
+            suite our African requirements
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Our Services</h2>
+        <h3 class="section__header">
+          Millions of Engineers are already making their work easier.
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Best chance to Upgrade!</h5>
+            <blockquote class="testimonial__text">
+             KETANECH have helped me become what I never thought i could become in the next couple of years, I can now build a complete inverter, together with the charge controller and make it work together with the battery without any alternator. All thanks to KTS.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/device.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name"> Ajibola Kedunde</h6>
+              <p class="testimonial__location">Lagos, Nigeria</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              The best chance to become a great Engineer.
+            </h5>
+            <blockquote class="testimonial__text">
+              KETANECH have helped me become what I never thought i could become in the next couple of years, I can now build a complete inverter, together with the charge controller and make it work together with the battery without any alternator. All thanks to KTS.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/odun5.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Odun Babs</h6>
+              <p class="testimonial__location">Osun state, Nigeria</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Fully in a digital and automated world
+            </h5>
+            <blockquote class="testimonial__text">
+              KETANECH have helped me become what I never thought i could become in the next couple of years, I can now build a complete inverter, together with the charge controller and make it work together with the battery without any alternator. All thanks to KTS.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/odun5.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Babalola Kenny</h6>
+              <p class="testimonial__location">Ibadan, Oyo State</p>
+            </address>
+          </div>
+        </div>
+
+        <!---
+
+        <div class="slide"><img src="img/img-1.jpg" alt="Photo 1" /></div>
+        <div class="slide"><img src="img/img-2.jpg" alt="Photo 2" /></div>
+        <div class="slide"><img src="img/img-3.jpg" alt="Photo 3" /></div>
+        <div class="slide"><img src="img/img-4.jpg" alt="Photo 4" /></div> --->
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          The best way to improve on Electrical Electronics Career is to keep
+          practising.
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Join Ketanech today!</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="img/ktslogoo.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://twitter.com/kts.org"
+          >Odun Babs @ Kts</a
+        >
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Register with Ketanech<br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <!--<script src="script.js"></script>--->
+  </body>
+</html>
